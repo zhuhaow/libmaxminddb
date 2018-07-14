@@ -17,8 +17,6 @@ extern "C" {
 #define _POSIX_C_SOURCE 200809L
 #endif
 
-#define PACKAGE_VERSION "1.2.1"
-
 #include <stdarg.h>
 #include <stdbool.h>
 #include <stdint.h>
