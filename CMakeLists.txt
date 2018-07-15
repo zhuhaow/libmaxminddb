@@ -14,7 +14,7 @@ else()
 endif()
 
 include_directories(include)
-add_library(maxminddb STATIC src/maxminddb.c)
+add_library(maxminddb STATIC src/maxminddb.c src/data-pool.c)
 set_target_properties(maxminddb PROPERTIES PUBLIC_HEADER "include/maxminddb.h")
 
 install(TARGETS maxminddb
