@@ -27,10 +27,6 @@ extern "C" {
 #include <winsock2.h>
 #include <ws2tcpip.h>
 
-/* libmaxminddb package version from configure */
-#define PACKAGE_VERSION "1.3.2"
-
-
 typedef ADDRESS_FAMILY sa_family_t;
 
 #if defined(_MSC_VER)
@@ -87,6 +83,9 @@ typedef ADDRESS_FAMILY sa_family_t;
 #define MMDB_IPV6_LOOKUP_IN_IPV4_DATABASE_ERROR (11)
 
 #define MMDB_UINT128_IS_BYTE_ARRAY 1
+
+/* libmaxminddb package version from configure */
+#define PACKAGE_VERSION "1.3.2"
 
 /* This is a pointer into the data section for a given IP address lookup */
 typedef struct MMDB_entry_s {
